@@ -2,6 +2,10 @@
 
 This is a sample PHP script that compares the local performance of SQLite and MySQL.
 
+This is based on the queries created for the
+[speed comparison for SQLite][1]. The obtained data there was
+outdated, thus this script rerun it on top of the newest versions.
+
 ## Requiremets
 
 This requires the following PHP extensions:
@@ -114,3 +118,5 @@ Some of the details have been removed for privacy.
     MySQL:test_14 Running 1 queries took 0.46 s
     MySQL:test_15 Running 12003 queries took 0.28 s
     MySQL:test_16 Running 3 queries took 0.06 s
+
+[1]: https://www.sqlite.org/speed.html

@@ -7,6 +7,7 @@ function exception_error_handler($errno, $errstr, $errfile, $errline)
 set_error_handler("exception_error_handler");
 
 require_once('db_sqlite.php');
+require_once('db_mysql.php');
 
 const NUMBER_OF_TESTS = 16;
 
@@ -24,3 +25,4 @@ function run_test($tester)
 }
 
 run_test(new SQLite3Tester("sqlite.db"));
+run_test(new MySQLTester("localhost", "root", "", "sqlite_test"));

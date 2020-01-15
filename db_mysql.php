@@ -29,7 +29,7 @@ class MySQLTester extends DBTester
 
     function get_name()
     {
-        return 'SQLite';
+        return 'MySQL';
     }
 
     function query($query)

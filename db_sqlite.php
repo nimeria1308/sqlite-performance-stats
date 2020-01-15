@@ -36,7 +36,3 @@ class SQLite3Tester extends DBTester
         return $this->sqlite_handle->version()["versionString"];
     }
 }
-
-const DB_FILENAME = "sqlite.db";
-
-$tester = new SQLite3Tester(DB_FILENAME);

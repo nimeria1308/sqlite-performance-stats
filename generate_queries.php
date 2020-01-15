@@ -182,19 +182,19 @@ function test_16($f)
     fwrite($f, "DROP TABLE t3;\n");
 }
 
-generate_queries('test_1', 10, 100);    // 1000, 100
-generate_queries('test_2', 10, 100);    // 25000, 100
-generate_queries('test_3', 10, 100);    // 24000, 100
-generate_queries('test_4', 10);         // 100
-generate_queries('test_5', 10);         // 100
+generate_queries('test_1',  1000, 100);
+generate_queries('test_2',  25000, 100);
+generate_queries('test_3',  25000, 100);
+generate_queries('test_4',  100);
+generate_queries('test_5',  100);
 generate_queries('test_6');
-generate_queries('test_7', 10);         // 5000
-generate_queries('test_8', 10);         // 1000
-generate_queries('test_9', 10);         // 25000
-generate_queries('test_10', 10);        // 25000
+generate_queries('test_7',  5000);
+generate_queries('test_8',  1000);
+generate_queries('test_9',  25000);
+generate_queries('test_10', 25000);
 generate_queries('test_11');
 generate_queries('test_12');
 generate_queries('test_13');
 generate_queries('test_14');
-generate_queries('test_15', 10);        // 12000
+generate_queries('test_15', 12000);
 generate_queries('test_16');

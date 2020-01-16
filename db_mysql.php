@@ -23,6 +23,7 @@ class MySQLTester extends DBTester
             // select it
             $this->mysql_handle->select_db($database);
         } catch (Exception $e) {
+            $this->close();
             throw $e;
         }
     }
